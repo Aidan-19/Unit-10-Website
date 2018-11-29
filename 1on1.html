@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Mac-1 Tatoos">
+    <meta name="author" content="Aidan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="CSS/NavigationBar.css">
+    <link rel="stylesheet" href="SwipeBox/src/css/swipebox.css">
+
+    <!-- JS -->
+    <script src="SwipeBox/lib/jquery-2.1.0.min.js"></script>
+    <script src="SwipeBox/src/js/jquery.swipebox.js"></script>
+
+    <!-- Swipe box options -->
+    <script type="text/javascript">
+        (function($) {
+
+            $('.swipebox').swipebox({
+                useCSS: true, // false will force the use of jQuery for animations
+                useSVG: true, // false to force the use of png for buttons
+                initialIndexOnArray: 0, // which image index to init when a array is passed
+                hideCloseButtonOnMobile: false, // true will hide the close button on mobile devices
+                removeBarsOnMobile: false, // false will show top bar on mobile devices
+                hideBarsDelay: 3000, // delay before hiding bars on desktop
+                videoMaxWidth: 1140, // videos max width
+                beforeOpen: function() {}, // called before opening
+                afterOpen: null, // called after opening
+                afterClose: function() {}, // called after closing
+                loopAtEnd: false // true will return to the first image after the last image is reached
+            });
+        })(jQuery);
+
+    </script>
+    <title>Training Sessions</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="topnav">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+                <li><a href="PaintingHistory.html">Painting Examples</a></li>
+                <li><a href="TatooHistory.html">Tattoo Examples</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="1on1.html">Teaching Sessions</a></li>
+            </ul>
+
+            <h1 style="font-size: 45px; color: blanchedalmond ">Training Sessions</h1>
+        </header>
+
+        <midsection>
+            <h1>Hey you...</h1>
+            <p style="margin-left: 10px; margin-right: 10px; text-align: center">
+                Ever wanted to become to become skilled in either tattooing or painting. Do you think you have what it takes to become the next big thing...<br> Have you ever wanted to paint like this..<br>
+            </p>
+
+            <!-- Image 1 -->
+            <p style="text-align: center">
+                <a href="Images/PTEx1.jpg" class="swipebox" title="Example 1"><img src="Images/PTEx1.jpg" alt="Example of what you can do" /></a>
+            </p>
+
+            <!-- <P style="margin-left: 10px; margin-right: 10px">or this..<br></P> -->
+            <h2 style="text-align: center">Or this..</h2>
+
+            <!-- Image 2 -->
+            <p style="text-align: center">
+                <a href="Images/PTEx2.jpg" class="swipebox" title="Example 2"><img src="Images/PTEx2.jpg" alt="Example of what you can do" /></a>
+            </p>
+
+            <p style="margin-left: 10px; margin-right: 10px;">
+                I believe everybody has the potential to become a great artist. This is why i started doing training sessions for both painting and tattooing and its all for free!<br> All you have to do is call or email me about and tell me you want to learn and i will try to get you a time slot. I say try because the spaces go quick!
+                <br><br>
+                <b>Quick Note</b><br> These are only avalable on saturdays from 13:30 till 18:30<br><br>
+
+            </p>
+        </midsection>
+
+        <footer>Property of TatTay ltd. All copyrights licenced from 2017-2020</footer>
+    </div>
+
+</body>
+
+</html>

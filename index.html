@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Mac-1 Tatoos">
+    <meta name="author" content="Aidan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="CSS/NavigationBar.css">
+
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <!-- JS -->
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Email must be filled out");
+                return false;
+            } else
+                alert("Welcome! You will be sent the first issue now!")
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="topnav">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+                <li><a href="PaintingHistory.html">Painting Examples</a></li>
+                <li><a href="TatooHistory.html">Tattoo Examples</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="1on1.html">Teaching Sessions</a></li>
+            </ul>
+
+            <h1 style="font-size: 45px; color: blanchedalmond ">HomePage</h1>
+        </header>
+        <midsection>
+            <h1 style="border-style: solid; border-width: 5px;">Welcome</h1>
+            <p style="margin-left: 10px; margin-right: 10px">
+                Welcome to my website. This website is to showcase some of my work in both tattooing and painting. This is also where you can find links to see what serices i offer such as 1 on 1 sessions and tattooing.
+                <br><br>About me is a bit of background about how i came to be where i am today.
+                <br><br>Contact me is where you can find all the relevant infomration like phone number, work address and phone number.
+                <br><br>My painting work is some emamples of my previous art work and what they are about/inspired them.
+                <br><br>Tatto history is very simlar to my painting work except it has exmapels of my previous tattoo work on there
+                <br><br> Enter your Email Address in the box below if you want monthy updates on the buisness<br>
+            </p>
+            <!-- Form -->
+            <form name="myForm" action="/index.html" onsubmit="return validateForm()" method="post">
+                Email: <input type="text" name="fname">
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+        </midsection>
+
+        <footer>Property of TatTay ltd. All copyrights licenced from 2017-2020</footer>
+    </div>
+</body>
+
+</html>

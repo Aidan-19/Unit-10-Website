@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mac-1 Tatoos">
+    <meta name="author" content="Aidan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="CSS/NavigationBar.css">
+    <link rel="stylesheet" href="SwipeBox/src/css/swipebox.css">
+
+    <!-- JS -->
+    <script src="SwipeBox/lib/jquery-2.1.0.min.js"></script>
+    <script src="SwipeBox/src/js/jquery.swipebox.js"></script>
+
+    <!-- Swipe box options -->
+    <script type="text/javascript">
+        ;
+        (function($) {
+
+            $('.swipebox').swipebox({
+                useCSS: true, // false will force the use of jQuery for animations
+                useSVG: true, // false to force the use of png for buttons
+                initialIndexOnArray: 0, // which image index to init when a array is passed
+                hideCloseButtonOnMobile: false, // true will hide the close button on mobile devices
+                removeBarsOnMobile: false, // false will show top bar on mobile devices
+                hideBarsDelay: 3000, // delay before hiding bars on desktop
+                videoMaxWidth: 1140, // videos max width
+                beforeOpen: function() {}, // called before opening
+                afterOpen: null, // called after opening
+                afterClose: function() {}, // called after closing
+                loopAtEnd: false // true will return to the first image after the last image is reached
+            });
+
+        })(jQuery);
+
+    </script>
+
+    <title>Tattoo History</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="topnav">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+                <li><a href="PaintingHistory.html">Painting Examples</a></li>
+                <li><a href="TatooHistory.html">Tattoo Examples</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="1on1.html">Teaching Sessions</a></li>
+            </ul>
+
+            <h1 style="font-size: 45px; color: blanchedalmond ">Tatoo Gallery</h1>
+        </header>
+
+        <midsection>
+
+            <!-- Page heading -->
+            <h1>Examples of Tattoos</h1>
+            <p style="margin-left: 40px; margin-right: 40px">
+                As you might have guessed by now i am a fan of tattoos! Here are two examples of tattos that i have done. Remember if you like what you see why not come to my shop and let me tattoo you!
+            </p>
+
+            <!-- Because of 4x3 aspect ratio on photos they are wonky -->
+
+            <!-- first picture container -->
+            <div style="margin-top: 50px;">
+
+                <!-- picture -->
+                <p style="float: left; text-align: center; max-width: 80%; margin-left: 20%; margin-right: 20%">
+                    <a href="Images/snail_tattoo.jpeg" class="swipebox" title="Snail"><img src="Images/snail_tattoo.jpeg" alt="Sally the snail" /></a>
+                    <br>
+                </p>
+
+                <!-- Explenation -->
+                <p style="float: left; margin-left: 40px; margin-right: 40px"><br> This was created by using the clients pet snail as a starting point. This was ok to do. The shell and texture on the snail took longer than i would have liked however i am pleased with the final result.
+                </p>
+            </div>
+
+            <!-- Second picuture container -->
+            <div style="margin-top: 50px">
+
+                <!-- picture -->
+                <p style="float: left; text-align: center; max-width: 80%; margin-left: 20%; margin-right: 20%">
+                    <a href="Images/bird_tattoo.jpg" class="swipebox" title="Bird"><img src="Images/bird_tattoo.jpg" alt="pepe the bird" /></a>
+                    <br>
+                </p>
+
+                <!-- Explenation -->
+                <p style="float: left; margin-left: 40px; margin-right: 40px"><br> This was a recent piece that i did. I like the colouring of this one as there are multiple blue shades used.
+                </p>
+            </div>
+        </midsection>
+
+        <footer>Property of TatTay ltd. All copyrights licenced from 2017-2020</footer>
+    </div>
+
+</body>
+
+</html>

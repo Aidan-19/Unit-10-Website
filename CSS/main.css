@@ -1,0 +1,111 @@
+/* Headings */
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Web Elements*/
+
+header {
+    width: 98%;
+    height: 150px;
+    background-color: #4267B2;
+    background-position: center;
+    padding: 1%;
+    display: block;
+}
+
+body {
+    display: block;
+    padding: 0;
+    margin: 0 10px;
+    background-color: #E9EBEE;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: inherit;
+    height: inherit;
+}
+
+midsection {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    float: left;
+    display: block;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    height: 30px;
+    background-color: khaki;
+    text-align: center
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0px;
+    opacity: 0.95;
+}
+
+img {
+    margin: 0 0;
+    border: 0;
+    max-width: 60%;
+    height: auto;
+}
+
+/* Responsive Design */
+
+@media screen (max-width: 800px) {
+    header {
+        height: 400px;
+    }
+    body {
+        margin: 0 10px;
+    }
+    MidSection {
+        padding: 0px;
+    }
+    img {
+        height: auto;
+        max-width: 80%
+    }
+}
+
+/* Fix footer text stack and give increase base image size for mobile devices */
+
+@media screen and (max-width: 771px) {
+    footer {
+        height: 50px
+    }
+    img {
+        height: auto;
+        max-width: 80%
+    }
+}
+
+/* Give navbar correct height and stack videos */
+
+@media screen and (max-width: 767px) {
+    header {
+        height: 380px;
+    }
+    iframe {
+        width: 100%;
+    }
+}
+
+/* header fix for Teaching sessions text */
+
+@media screen and (max-width: 360px) {
+    header {
+        height: 420px;
+    }
+}

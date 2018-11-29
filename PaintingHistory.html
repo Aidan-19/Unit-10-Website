@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mac-1 Tatoos">
+    <meta name="author" content="Aidan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="CSS/NavigationBar.css">
+    <link rel="stylesheet" href="SwipeBox/src/css/swipebox.css">
+
+    <!-- JS -->
+    <script src="SwipeBox/lib/jquery-2.1.0.min.js"></script>
+    <script src="SwipeBox/src/js/jquery.swipebox.js"></script>
+
+    <!-- Swipe box options -->
+    <script type="text/javascript">
+        ;
+        (function($) {
+
+            $('.swipebox').swipebox({
+                useCSS: true, // false will force the use of jQuery for animations
+                useSVG: true, // false to force the use of png for buttons
+                initialIndexOnArray: 0, // which image index to init when a array is passed
+                hideCloseButtonOnMobile: false, // true will hide the close button on mobile devices
+                removeBarsOnMobile: false, // false will show top bar on mobile devices
+                hideBarsDelay: 3000, // delay before hiding bars on desktop
+                videoMaxWidth: 1140, // videos max width
+                beforeOpen: function() {}, // called before opening
+                afterOpen: null, // called after opening
+                afterClose: function() {}, // called after closing
+                loopAtEnd: false // true will return to the first image after the last image is reached
+            });
+        })(jQuery);
+
+    </script>
+
+    <!-- Title of page -->
+    <title>Painting Examples</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="topnav">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+                <li><a href="PaintingHistory.html">Painting Examples</a></li>
+                <li><a href="TatooHistory.html">Tattoo Examples</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="1on1.html">Teaching Sessions</a></li>
+            </ul>
+
+            <h1 style="font-size: 45px; color: blanchedalmond ">Painting Gallery</h1>
+        </header>
+        <midsection>
+
+            <!--  Page heading	-->
+            <h1>Examples of paintings</h1>
+            <p style="margin-left: 40px; margin-right: 40px">
+                As you might have guessed by now i am a fan of painting! Here are two examples of paintings that i have made. As you may notice they are both different styles. This is because i like to experiment with the types of my paintings.
+            </p>
+
+            <!-- first picture container -->
+            <div style="margin-top: 50px;">
+
+                <!-- picture -->
+                <p style="float: left; text-align: center; margin-left: 20px;">
+                    <a href="Images/warfram_eq_img.png" class="swipebox" title="my caption"><img src="Images/warfram_eq_img.png" alt="My painting" /></a>
+                    <br>
+                </p>
+
+                <!-- Explenation -->
+                <p style="margin-left: 40px; margin-right: 40px"><br> This is a piece i did on the game warframe. I had been recently playing it alot and was interested by all the different character designs. I decided to paint a piece on equinox. A playable character. This character holds both equaly offensive and defensive characteristics and can when leveled up be verry powerful. I like the way the colour and aura of equinox contrasts with the dark and foggy background.
+                </p>
+            </div>
+
+            <!-- Second picuture container -->
+            <div style="margin-top: 50px">
+
+                <!-- picture -->
+                <p style="text-align: center; margin-left: 20px">
+                    <a href="Images/bob_ross_mountain_img.jpeg" class="swipebox" title="Bob Ross interpretation"><img src="Images/bob_ross_mountain_img.jpeg" alt="My painting" /></a>
+                    <br>
+                </p>
+
+                <!-- Explenation -->
+                <p style="margin-left: 40px; margin-right: 40px"><br> This was inspired by a non stop marathon of bob ross on <a href="https://www.twitch.tv/videos/212568086">twitch.tv</a> and i was interested by his unique painting style. This was my take on one of his more popular paintings. There were many scrapped versions that fortunatley you dont have to see. I has alot of fun painting this painting as it was more of a do it your own way kind of painting which are the kind i enjoy most.
+                </p>
+            </div>
+        </midsection>
+
+        <footer>Property of TatTay ltd. All copyrights licenced from 2017-2020</footer>
+    </div>
+
+</body>
+
+</html>
